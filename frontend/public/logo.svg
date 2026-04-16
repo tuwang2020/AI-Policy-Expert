@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1890ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#722ed1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 外圈 -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="3"/>
+  
+  <!-- 文档图标 -->
+  <rect x="30" y="25" width="35" height="45" rx="3" fill="#fff" stroke="#1890ff" stroke-width="2"/>
+  <path d="M55 25 L65 35 L55 35 Z" fill="#e6f7ff" stroke="#1890ff" stroke-width="1.5"/>
+  
+  <!-- AI标识 -->
+  <text x="47" y="52" font-family="Arial" font-size="14" font-weight="bold" fill="#1890ff">AI</text>
+  
+  <!-- 连接线 -->
+  <line x1="50" y1="70" x2="50" y2="80" stroke="#722ed1" stroke-width="2"/>
+  <circle cx="50" cy="83" r="3" fill="#722ed1"/>
+  
+  <!-- 小点装饰 -->
+  <circle cx="25" cy="30" r="2" fill="#52c41a" opacity="0.6"/>
+  <circle cx="75" cy="28" r="2" fill="#faad14" opacity="0.6"/>
+  <circle cx="72" cy="68" r="2" fill="#f5222d" opacity="0.6"/>
+</svg>
