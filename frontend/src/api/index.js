@@ -70,7 +70,8 @@ export const policyApi = {
     const formData = new FormData()
     formData.append('file', file)
     return request.post('/policies/upload', formData, {
-      headers: { 'Content-Type': 'multipart/form-data' }
+      headers: { 'Content-Type': 'multipart/form-data' },
+      timeout: 300000
     })
   },
   updateFields: (id, data) => request.put(`/policies/${id}/fields`, data),

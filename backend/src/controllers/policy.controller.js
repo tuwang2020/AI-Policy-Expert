@@ -1,4 +1,5 @@
 const PolicyService = require('../services/policy.service');
+const Policy = require('../models/Policy.model');
 const logger = require('../utils/logger');
 
 class PolicyController {

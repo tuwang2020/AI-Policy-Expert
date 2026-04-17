@@ -257,10 +257,10 @@ class ReminderService {
   async getStatistics() {
     const stats = await Reminder.findAll({
       attributes: [
-        [sequelize.fn('COUNT', sequelize.col('*')), 'total'],
-        [sequelize.fn('COUNT', sequelize.literal("CASE WHEN status='pending' THEN 1 END")), 'pending'],
-        [sequelize.fn('COUNT', sequelize.literal("CASE WHEN status='sent' THEN 1 END")), 'sent'],
-        [sequelize.fn('COUNT', sequelize.literal("CASE WHEN status='failed' THEN 1 END")), 'failed']
+        [Sequelize.fn('COUNT', Sequelize.col('*')), 'total'],
+        [Sequelize.fn('COUNT', Sequelize.literal("CASE WHEN status='pending' THEN 1 END")), 'pending'],
+        [Sequelize.fn('COUNT', Sequelize.literal("CASE WHEN status='sent' THEN 1 END")), 'sent'],
+        [Sequelize.fn('COUNT', Sequelize.literal("CASE WHEN status='failed' THEN 1 END")), 'failed']
       ],
       raw: true
     });
